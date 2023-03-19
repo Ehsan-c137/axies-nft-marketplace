@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="shortcut icon"
+         href="./assets/axies-images/favicon.png"
+         type="image/x-icon"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./assets/styles/main.css" />
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      />
+      <script
+         defer
+         src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+      ></script>
+      <script defer src="./assets/JS/header.js"></script>
+      <script defer src="./assets/JS/general.js"></script>
+      <script defer src="./assets/JS/liveauctions.js"></script>
+      <title>Axies NFT marketplace</title>
+   </head>
+   <body class="dark-theme">
+      <header class="header" id="header">
+         <div class="header__links">
+            <img
+               class="header__img sticky__img"
+               src="./assets/axies-images/01_header/logo_dark.png"
+               alt="axies logo header"
+            />
+
+            <ul>
+               <li class="header__home-link">
+                  <a href="./index.html">Home </a>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Explore</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="./item1.html">Item 1</a>
+                     <a href="./login.html">Login</a>
+                     <a href="#today">Today's Picks</a>
+                     <a href="./profile.html">Profile</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Activity</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="#">Forum</a>
+                     <a href="github.com/ehsan-c137">Social Medias</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Community</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="#">Auctions</a>
+                     <a href="#">Sellers</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Pages</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="./login.html">Login</a>
+                     <a href="#">Blog</a>
+                     <a href="#">FAQ</a>
+                     <a href="#">Create Item</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Contact</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="#">Collections</a>
+                     <a href="#">Sellers</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+
+         <div class="header__search_wallet">
+            <div class="header__search">
+               <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+               <form action="" class="search" id="header-search">
+                  <input
+                     class="search__input"
+                     type="search"
+                     placeholder="Search"
+                     id="searchInput"
+                  />
+
+                  <div class="search__icon-container">
+                     <label
+                        for="searchInput"
+                        class="search__label"
+                        aria-label="Search"
+                     >
+                        <svg viewBox="0 0 1000 1000" title="Search">
+                           <path
+                              fill="currentColor"
+                              d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z"
+                           />
+                        </svg>
+                     </label>
+
+                     <button class="search__submit" aria-label="Search">
+                        <svg viewBox="0 0 1000 1000" title="Search">
+                           <path
+                              fill="currentColor"
+                              d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z"
+                           />
+                        </svg>
+                     </button>
+                  </div>
+               </form>
+            </div>
+
+            <div class="header__wallet">
+               <i class="fa-solid fa-wallet"></i>
+               <p>Wallet connect</p>
+            </div>
+         </div>
+
+         <div class="header__buttons">
+            <div class="change-theme">
+               <div class="header__buttons__container lightmode-btn">
+                  <img
+                     class="header__buttons--light-mode"
+                     src="./assets/axies-images/01_header/sun.png"
+                     alt="sun icon"
+                  />
+               </div>
+               <div class="header__buttons__container darkmode-btn hidden">
+                  <img
+                     src="./assets/axies-images/01_header/moon-2.png"
+                     alt="moon icon"
+                  />
+               </div>
+            </div>
+            <div class="header_buttons__menu hidden">
+               <div class="header_buttons__menu__close hidden">
+                  <i class="fa-solid fa-xmark"></i>
+               </div>
+               <div class="header_buttons__menu__open">
+                  <i class="fa-solid fa-bars"></i>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="vertical__icons">
+            <i class="fa-brands fa-twitter footer__subscribe__icon"></i>
+            <i class="fa-brands fa-facebook footer__subscribe__icon"></i>
+            <i class="fa-brands fa-telegram footer__subscribe__icon"></i>
+            <i class="fa-brands fa-youtube footer__subscribe__icon"></i>
+            <i class="fa-brands fa-tiktok footer__subscribe__icon"></i>
+            <i class="fa-brands fa-discord footer__subscribe__icon"></i>
+         </div>
+
+         <div class="go-to-top-btn">
+            <i class="fa-solid fa-angle-up"></i>
+         </div>
+
+         <section class="hero" id="hero">
+            <div class="hero__left">
+               <h1 class="hero__left__header">
+                  Discover, and collect <br />extraodinarty <br /><span
+                     class="hero__left__header--active"
+                     >Monster</span
+                  >
+                  NFTs
+               </h1>
+               <p class="hero__left__desc">
+                  Marketplace For Monster Character Cllection Non Fungible Token
+                  NFTs
+               </p>
+               <div class="hero__left__buttons">
+                  <button><i class="fa-solid fa-rocket"></i> Explore</button>
+                  <button>
+                     <i class="fa-solid fa-rectangle-list"></i> Create
+                  </button>
+               </div>
+            </div>
+            <div class="hero__right">
+               <img
+                  class="hero__right__blob-shape"
+                  src="./assets/axies-images/02_hero/hero-img-blob-shape.png"
+                  alt="hero image"
+               />
+
+               <img
+                  class="hero__right__doll"
+                  src="./assets/axies-images/02_hero/imgslider2.png"
+                  alt="hero image"
+               />
+               <img
+                  class="hero__right__stars"
+                  src="./assets/axies-images/02_hero/stars.svg"
+                  alt="hero image"
+               />
+               <div class="shape item-w-16"></div>
+               <div class="shape item-w-22"></div>
+               <div class="shape item-w-32"></div>
+               <div class="shape item-w-48"></div>
+               <div class="shape style2 item-w-51"></div>
+               <div class="shape style2 item-w-51 position2"></div>
+               <div class="shape item-w-68"></div>
+            </div>
+         </section>
+
+         <section id="feature" class="feature observer container">
+            <div class="feature__container">
+               <i
+                  class="fa-solid fa-wallet feature__icon feature__icon__wallet"
+               ></i>
+               <p class="feature__header">Set Up your Wallet</p>
+               <p class="feature__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at
+                  reiciendis accusantium tempora dolorem animi explicabo sed
+               </p>
+            </div>
+            <div class="feature__container">
+               <i
+                  class="fa-solid fa-border-all feature__icon feature__icon__collection"
+               ></i>
+               <p class="feature__header">Create Your Collection</p>
+               <p class="feature__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at
+                  reiciendis accusantium tempora dolorem animi
+               </p>
+            </div>
+            <div class="feature__container">
+               <i
+                  class="fa-solid fa-image feature__icon feature__icon__nft"
+               ></i>
+               <p class="feature__header">Add your NFTs</p>
+               <p class="feature__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at
+                  reiciendis accusantium tempora dolorem animi explicabo sed
+               </p>
+            </div>
+            <div class="feature__container">
+               <i
+                  class="fa-solid fa-bookmark feature__icon feature__icon__list"
+               ></i>
+               <p class="feature__header">List them for sale</p>
+               <p class="feature__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at
+                  reiciendis accusantium tempora dolorem animi explicabo
+               </p>
+            </div>
+         </section>
+         <!--  live auctions  -->
+         <section class="live-acutions observer container">
+            <!--  -->
+            <div class="live-acutions__header">
+               <p class="live-acutions__header__left">Live Auctions</p>
+               <p class="live-acutions__header__right">EXPLORE MORE</p>
+            </div>
+
+            <div class="swiper">
+               <div class="live-acutions__main-container swiper-wrapper">
+                  <div class="live-acutions__main swiper-slide">
+                     <div class="live-acutions__image-container">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/card-item8.jpg"
+                           alt="nft item"
+                        />
+                        <div class="live-acutions__time">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/fire.svg"
+                              alt="fire icon"
+                           />
+                           <p class="live-acutions__time-label">
+                              5 : 23 : 22 : 08
+                           </p>
+                        </div>
+                     </div>
+                     <p class="live-acutions__title">
+                        "Hamlet Contemplates Yorick's...
+                     </p>
+                     <div class="live-acutions__creator-container">
+                        <div class="live-acutions__creator__left">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                              alt="nft creator"
+                           />
+                           <div class="live-acutions__creator__desc">
+                              <p class="live-acutions__creator__desc-1">
+                                 Creator
+                              </p>
+                              <p class="live-acutions__creator__desc-2">
+                                 SalvadorDali
+                              </p>
+                           </div>
+                        </div>
+                        <div class="live-acutions__creator__right">
+                           <p>BSC</p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__wrapper-line"></div>
+                     <div class="live-acutions__price-like">
+                        <div class="live-acutions__price">
+                           <p class="live-acutions__price--current-text">
+                              Current Bid
+                           </p>
+                           <p>
+                              <span class="live-acutions__price--crypto"
+                                 >4.89 ETH</span
+                              >
+                              <span class="live-acutions__price--dollor"
+                                 >= $12.246</span
+                              >
+                           </p>
+                        </div>
+                        <div class="live-acutions__like card__like">
+                           <div class="heart-icon"></div>
+                           <p
+                              class="live-acutions__like-label card__like-label"
+                           >
+                              100
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="live-acutions__main swiper-slide">
+                     <div class="live-acutions__image-container">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/image-box-10.jpg"
+                           alt="nft item"
+                        />
+                        <div class="live-acutions__time">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/fire.svg"
+                              alt="fire icon"
+                           />
+                           <p class="live-acutions__time-label">
+                              5 : 23 : 22 : 08
+                           </p>
+                        </div>
+                     </div>
+                     <p class="live-acutions__title">
+                        "Hamlet Contemplates Yorick's...
+                     </p>
+                     <div class="live-acutions__creator-container">
+                        <div class="live-acutions__creator__left">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                              alt="nft creator"
+                           />
+                           <div class="live-acutions__creator__desc">
+                              <p class="live-acutions__creator__desc-1">
+                                 Creator
+                              </p>
+                              <p class="live-acutions__creator__desc-2">
+                                 SalvadorDali
+                              </p>
+                           </div>
+                        </div>
+                        <div class="live-acutions__creator__right">
+                           <p>BSC</p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__wrapper-line"></div>
+                     <div class="live-acutions__price-like">
+                        <div class="live-acutions__price">
+                           <p class="live-acutions__price--current-text">
+                              Current Bid
+                           </p>
+                           <p>
+                              <span class="live-acutions__price--crypto"
+                                 >4.89 ETH</span
+                              >
+                              <span class="live-acutions__price--dollor"
+                                 >= $12.246</span
+                              >
+                           </p>
+                        </div>
+                        <div class="live-acutions__like card__like">
+                           <div class="heart-icon"></div>
+                           <p
+                              class="live-acutions__like-label card__like-label"
+                           >
+                              100
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="live-acutions__main swiper-slide">
+                     <div class="live-acutions__image-container">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/card-item-2.jpg"
+                           alt="nft item"
+                        />
+                        <div class="live-acutions__time">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/fire.svg"
+                              alt="fire icon"
+                           />
+                           <p class="live-acutions__time-label">
+                              5 : 23 : 22 : 08
+                           </p>
+                        </div>
+                     </div>
+                     <p class="live-acutions__title">
+                        "Hamlet Contemplates Yorick's...
+                     </p>
+                     <div class="live-acutions__creator-container">
+                        <div class="live-acutions__creator__left">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                              alt="nft creator"
+                           />
+                           <div class="live-acutions__creator__desc">
+                              <p class="live-acutions__creator__desc-1">
+                                 Creator
+                              </p>
+                              <p class="live-acutions__creator__desc-2">
+                                 SalvadorDali
+                              </p>
+                           </div>
+                        </div>
+                        <div class="live-acutions__creator__right">
+                           <p>BSC</p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__wrapper-line"></div>
+                     <div class="live-acutions__price-like">
+                        <div class="live-acutions__price">
+                           <p class="live-acutions__price--current-text">
+                              Current Bid
+                           </p>
+                           <p>
+                              <span class="live-acutions__price--crypto"
+                                 >4.89 ETH</span
+                              >
+                              <span class="live-acutions__price--dollor"
+                                 >= $12.246</span
+                              >
+                           </p>
+                        </div>
+                        <div class="live-acutions__like card__like">
+                           <div class="heart-icon"></div>
+                           <p
+                              class="live-acutions__like-label card__like-label"
+                           >
+                              100
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="live-acutions__main swiper-slide">
+                     <div class="live-acutions__image-container">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/image-box-11.jpg"
+                           alt="nft item"
+                        />
+                        <div class="live-acutions__time">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/fire.svg"
+                              alt="fire icon"
+                           />
+                           <p class="live-acutions__time-label">
+                              5 : 23 : 22 : 08
+                           </p>
+                        </div>
+                     </div>
+                     <p class="live-acutions__title">
+                        "Hamlet Contemplates Yorick's...
+                     </p>
+                     <div class="live-acutions__creator-container">
+                        <div class="live-acutions__creator__left">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                              alt="nft creator"
+                           />
+                           <div class="live-acutions__creator__desc">
+                              <p class="live-acutions__creator__desc-1">
+                                 Creator
+                              </p>
+                              <p class="live-acutions__creator__desc-2">
+                                 SalvadorDali
+                              </p>
+                           </div>
+                        </div>
+                        <div class="live-acutions__creator__right">
+                           <p>BSC</p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__wrapper-line"></div>
+                     <div class="live-acutions__price-like">
+                        <div class="live-acutions__price">
+                           <p class="live-acutions__price--current-text">
+                              Current Bid
+                           </p>
+                           <p>
+                              <span class="live-acutions__price--crypto"
+                                 >4.89 ETH</span
+                              >
+                              <span class="live-acutions__price--dollor"
+                                 >= $12.246</span
+                              >
+                           </p>
+                        </div>
+                        <div class="live-acutions__like card__like">
+                           <div class="heart-icon"></div>
+                           <p
+                              class="live-acutions__like-label card__like-label"
+                           >
+                              100
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="live-acutions__main swiper-slide">
+                     <div class="live-acutions__image-container">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/image-box-21.jpg"
+                           alt="nft item"
+                        />
+                        <div class="live-acutions__time">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/fire.svg"
+                              alt="fire icon"
+                           />
+                           <p class="live-acutions__time-label">
+                              5 : 23 : 22 : 08
+                           </p>
+                        </div>
+                     </div>
+                     <p class="live-acutions__title">
+                        "Hamlet Contemplates Yorick's...
+                     </p>
+                     <div class="live-acutions__creator-container">
+                        <div class="live-acutions__creator__left">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                              alt="nft creator"
+                           />
+                           <div class="live-acutions__creator__desc">
+                              <p class="live-acutions__creator__desc-1">
+                                 Creator
+                              </p>
+                              <p class="live-acutions__creator__desc-2">
+                                 SalvadorDali
+                              </p>
+                           </div>
+                        </div>
+                        <div class="live-acutions__creator__right">
+                           <p>BSC</p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__wrapper-line"></div>
+                     <div class="live-acutions__price-like">
+                        <div class="live-acutions__price">
+                           <p class="live-acutions__price--current-text">
+                              Current Bid
+                           </p>
+                           <p>
+                              <span class="live-acutions__price--crypto"
+                                 >4.89 ETH</span
+                              >
+                              <span class="live-acutions__price--dollor"
+                                 >= $12.246</span
+                              >
+                           </p>
+                        </div>
+                        <div class="live-acutions__like card__like">
+                           <div class="heart-icon"></div>
+                           <p
+                              class="live-acutions__like-label card__like-label"
+                           >
+                              93
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="live-acutions__main swiper-slide">
+                     <div class="live-acutions__image-container">
+                        <img
+                           src="./assets/axies-images/05_Today's Picks/card-item-2.jpg"
+                           alt="nft item"
+                        />
+                        <div class="live-acutions__time">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/fire.svg"
+                              alt="fire icon"
+                           />
+                           <p class="live-acutions__time-label">
+                              5 : 23 : 22 : 08
+                           </p>
+                        </div>
+                     </div>
+                     <p class="live-acutions__title">
+                        "Hamlet Contemplates Yorick's...
+                     </p>
+                     <div class="live-acutions__creator-container">
+                        <div class="live-acutions__creator__left">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                              alt="nft creator"
+                           />
+                           <div class="live-acutions__creator__desc">
+                              <p class="live-acutions__creator__desc-1">
+                                 Creator
+                              </p>
+                              <p class="live-acutions__creator__desc-2">
+                                 SalvadorDali
+                              </p>
+                           </div>
+                        </div>
+                        <div class="live-acutions__creator__right">
+                           <p>BSC</p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__wrapper-line"></div>
+                     <div class="live-acutions__price-like">
+                        <div class="live-acutions__price">
+                           <p class="live-acutions__price--current-text">
+                              Current Bid
+                           </p>
+                           <p>
+                              <span class="live-acutions__price--crypto"
+                                 >4.89 ETH</span
+                              >
+                              <span class="live-acutions__price--dollor"
+                                 >= $12.246</span
+                              >
+                           </p>
+                        </div>
+                        <div class="live-acutions__like card__like">
+                           <div class="heart-icon"></div>
+                           <p
+                              class="live-acutions__like-label card__like-label"
+                           >
+                              130
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="live-acutions__main swiper-slide">
+                     <div class="live-acutions__image-container">
+                        <img
+                           src="./assets/axies-images/05_Today's Picks/card-item-7.jpg"
+                           alt="nft item"
+                        />
+                        <div class="live-acutions__time">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/fire.svg"
+                              alt="fire icon"
+                           />
+                           <p class="live-acutions__time-label">
+                              5 : 23 : 22 : 08
+                           </p>
+                        </div>
+                     </div>
+                     <p class="live-acutions__title">
+                        "Hamlet Contemplates Yorick's...
+                     </p>
+                     <div class="live-acutions__creator-container">
+                        <div class="live-acutions__creator__left">
+                           <img
+                              src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                              alt="nft creator"
+                           />
+                           <div class="live-acutions__creator__desc">
+                              <p class="live-acutions__creator__desc-1">
+                                 Creator
+                              </p>
+                              <p class="live-acutions__creator__desc-2">
+                                 SalvadorDali
+                              </p>
+                           </div>
+                        </div>
+                        <div class="live-acutions__creator__right">
+                           <p>BSC</p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__wrapper-line"></div>
+                     <div class="live-acutions__price-like">
+                        <div class="live-acutions__price">
+                           <p class="live-acutions__price--current-text">
+                              Current Bid
+                           </p>
+                           <p>
+                              <span class="live-acutions__price--crypto"
+                                 >4.89 ETH</span
+                              >
+                              <span class="live-acutions__price--dollor"
+                                 >= $12.246</span
+                              >
+                           </p>
+                        </div>
+                        <div class="live-acutions__like card__like">
+                           <div class="heart-icon"></div>
+                           <p
+                              class="live-acutions__like-label card__like-label"
+                           >
+                              103
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+               </div>
+               <div class="swiper-pagination"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+         </section>
+         <section class="popular container observer">
+            <div class="popular__header">
+               <p class="popular__header__left">Popular Collection</p>
+               <p class="popular__header__right">EXPLORE MORE</p>
+            </div>
+            <div class="popular__main">
+               <div class="popular__card">
+                  <div class="popular__card-top">
+                     <img
+                        class="popular__top-img"
+                        src="./assets/axies-images/06_Popular Collection/box1/image-box-10.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__top-img"
+                        src="./assets/axies-images/06_Popular Collection/box1/collection-item-2.jpg"
+                        alt="popular nft collection"
+                     />
+                  </div>
+                  <div class="popular__card-bottom">
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box1/collection-item-top-1.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box1/collection-item-top-2.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box1/collection-item-bottom-4.jpg"
+                        alt="popular nft collection"
+                     />
+                  </div>
+                  <div class="popular__desc-container">
+                     <div class="popular__desc">
+                        <img
+                           src="./assets/axies-images/04_Top Seller/avt-1.jpg"
+                           alt="popular nft maker"
+                        />
+                        <div class="popular__desc__text">
+                           <p class="popular__desc__text-r1">
+                              Creative Art Collection
+                           </p>
+                           <p class="popular__desc__text-r2">
+                              <span class="popular__desc__text-r2-light">
+                                 Created by </span
+                              >Ralph Garraway
+                           </p>
+                        </div>
+                     </div>
+                     <div class="popular__like-container">
+                        <div class="heart-icon"></div>
+                        <p>100</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="popular__card">
+                  <div class="popular__card-top">
+                     <img
+                        class="popular__top-img"
+                        src="./assets/axies-images/06_Popular Collection/box2/img-collection10.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__top-img"
+                        src="./assets/axies-images/06_Popular Collection/box2/img-collection23.jpg"
+                        alt="popular nft collection"
+                     />
+                  </div>
+                  <div class="popular__card-bottom">
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box2/img-collection11.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box2/img-collection24.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box1/collection-item-bottom-4.jpg"
+                        alt="popular nft collection"
+                     />
+                  </div>
+                  <div class="popular__desc-container">
+                     <div class="popular__desc">
+                        <img
+                           src="./assets/axies-images/04_Top Seller/avt-2.jpg"
+                           alt="popular nft maker"
+                        />
+                        <div class="popular__desc__text">
+                           <p class="popular__desc__text-r1">
+                              Creative Art Collection
+                           </p>
+                           <p class="popular__desc__text-r2">
+                              <span class="popular__desc__text-r2-light">
+                                 Created by </span
+                              >Max Schrwit
+                           </p>
+                        </div>
+                     </div>
+                     <div class="popular__like-container">
+                        <div class="heart-icon"></div>
+                        <p>114</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="popular__card">
+                  <div class="popular__card-top">
+                     <img
+                        class="popular__top-img"
+                        src="./assets/axies-images/06_Popular Collection/box3/img-collection12.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__top-img"
+                        src="./assets/axies-images/06_Popular Collection/box3/img-collection17.jpg"
+                        alt="popular nft collection"
+                     />
+                  </div>
+                  <div class="popular__card-bottom">
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box3/img-collection25.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/06_Popular Collection/box3/img-collection18.jpg"
+                        alt="popular nft collection"
+                     />
+                     <img
+                        class="popular__bottom-img"
+                        src="./assets/axies-images/05_Today's Picks/card-item-4.jpg"
+                        alt="popular nft collection"
+                     />
+                  </div>
+                  <div class="popular__desc-container">
+                     <div class="popular__desc">
+                        <img
+                           src="./assets/axies-images/04_Top Seller/avt-4.jpg"
+                           alt="popular nft maker"
+                        />
+                        <div class="popular__desc__text">
+                           <p class="popular__desc__text-r1">
+                              Creative Art Collection
+                           </p>
+                           <p class="popular__desc__text-r2">
+                              <span class="popular__desc__text-r2-light">
+                                 Created by </span
+                              >Sara Nic
+                           </p>
+                        </div>
+                     </div>
+                     <div class="popular__like-container">
+                        <div class="heart-icon"></div>
+                        <p>109</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="top-seller" class="top-seller observer container">
+            <p class="top-seller__header">Top seller</p>
+            <div class="top-seller__container">
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-1.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-2.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-3.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-4.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-5.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-6.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-7.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-8.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-9.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+               <div class="top-seller__card">
+                  <div class="top-seller__card-img-container">
+                     <img
+                        class="top-seller__card-img"
+                        src="./assets/axies-images/04_Top Seller/avt-3.jpg"
+                        alt="top seller avatar"
+                     />
+                     <i
+                        class="fa-solid fa-circle-check top-seller__card-img-check"
+                     ></i>
+                  </div>
+                  <div class="top-seller__card-text">
+                     <p class="top-seller__card-text__creator">Crispin Berry</p>
+                     <p class="top-seller__card-text__price">214.2 ETH</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="today" id="today">
+            <div class="today__header observer container">
+               <p class="today__header__left">Today's Picks</p>
+               <p class="today__header__right"><a href="#">EXPLORE MORE</a></p>
+            </div>
+            <div class="today__btns">
+               <div class="today__btns__left">
+                  <button>
+                     <i class="fa-solid fa-boxes-stacked"></i>
+                     <p>Category</p>
+                  </button>
+                  <button>
+                     <i class="fa-solid fa-dollar-sign"></i>
+                     <p>Price range</p>
+                  </button>
+                  <button>
+                     <i class="fa-solid fa-bolt-lightning"></i>
+                     <p>Sale type</p>
+                  </button>
+                  <button>
+                     <i class="fa-solid fa-cubes"></i>
+                     <p>Blockchain</p>
+                  </button>
+               </div>
+               <div class="today__btns__right">
+                  <i class="fa-solid fa-bars-sort"></i>
+                  <p>Sort By: <span> Recently Added</span></p>
+               </div>
+            </div>
+            <div class="today__main">
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/03_Live Auctions/image-box-11.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item-2.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item-3.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item-4.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item-7.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item-9.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item8.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="today__main__card">
+                  <div class="today__main__card__img">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/image-box-11.jpg"
+                        alt="nft item"
+                     />
+
+                     <div
+                        class="today__main__card__like live-acutions__like card__like"
+                     >
+                        <div class="heart-icon"></div>
+                        <p class="live-acutions__like-label card__like-label">
+                           100
+                        </p>
+                     </div>
+                  </div>
+                  <p class="live-acutions__title">
+                     "Hamlet Contemplates Yorick's...
+                  </p>
+                  <div class="live-acutions__creator-container">
+                     <div class="live-acutions__creator__left">
+                        <img
+                           src="./assets/axies-images/03_Live Auctions/creator-1.png"
+                           alt="nft creator"
+                        />
+                        <div class="live-acutions__creator__desc">
+                           <p class="live-acutions__creator__desc-1">Creator</p>
+                           <p class="live-acutions__creator__desc-2">
+                              SalvadorDali
+                           </p>
+                        </div>
+                     </div>
+                     <div class="live-acutions__creator__right">
+                        <p>BSC</p>
+                     </div>
+                  </div>
+                  <div class="live-acutions__wrapper-line"></div>
+                  <div
+                     class="live-acutions__price-like today__currentbid-container"
+                  >
+                     <div class="live-acutions__price">
+                        <p class="live-acutions__price--current-text">
+                           Current Bid
+                        </p>
+                        <p>
+                           <span class="live-acutions__price--crypto"
+                              >4.89 ETH</span
+                           >
+                           <span class="live-acutions__price--dollor"
+                              >= $12.246</span
+                           >
+                        </p>
+                     </div>
+                     <div class="today__history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>View History</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="today__load-more-container">
+               <button class="today__load-more">Load More</button>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__logo-desc">
+            <img
+               class="footer__logo-desc-logo"
+               src="./assets/axies-images/01_header/logo_dark.png"
+               alt="axies logo"
+            />
+            <p class="footer__logo-desc__text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Suscipit, illum?
+            </p>
+         </div>
+         <div class="footer__link links-container">
+            <p class="footer__link__title">My Account</p>
+            <p class="footer__link__item">Autors</p>
+            <p class="footer__link__item">Collection</p>
+            <p class="footer__link__item">Author Profile</p>
+            <p class="footer__link__item">Create Item</p>
+         </div>
+         <div class="footer__link links-container">
+            <p class="footer__link__title">Resources</p>
+            <p class="footer__link__item">Help & Support</p>
+            <p class="footer__link__item">Live Auctions</p>
+            <p class="footer__link__item">Item Details</p>
+            <p class="footer__link__item">Activity</p>
+         </div>
+         <div class="footer__link links-container">
+            <p class="footer__link__title">Company</p>
+            <p class="footer__link__item">Explore</p>
+            <p class="footer__link__item">Contact us</p>
+            <p class="footer__link__item">Our Blog</p>
+            <p class="footer__link__item">FAQ</p>
+         </div>
+         <div class="footer__subscribe">
+            <p class="footer__subscribe-text">Subscribe us</p>
+            <form action="submit" class="footer__subscribe__form">
+               <input type="text" placeholder="info@youremail.com" />
+               <button><i class="fa-solid fa-caret-right"></i></button>
+            </form>
+            <div class="footer__subscribe__icons">
+               <i class="fa-brands fa-twitter footer__subscribe__icon"></i>
+               <i class="fa-brands fa-facebook footer__subscribe__icon"></i>
+               <i class="fa-brands fa-telegram footer__subscribe__icon"></i>
+               <i class="fa-brands fa-youtube footer__subscribe__icon"></i>
+               <i class="fa-brands fa-tiktok footer__subscribe__icon"></i>
+               <i class="fa-brands fa-discord footer__subscribe__icon"></i>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

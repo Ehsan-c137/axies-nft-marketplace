@@ -1,0 +1,220 @@
+@keyframes ver-float {
+   0% {
+      transform: translate(0rem, 0rem);
+   }
+   50% {
+      transform: translate(0.5rem, -1rem);
+   }
+   100% {
+      transform: translate(0rem, 0rem);
+   }
+}
+
+@keyframes hor-float-hero {
+   0% {
+      transform: translate(21rem, -35rem);
+   }
+   50% {
+      transform: translate(22rem, -35rem);
+   }
+   100% {
+      transform: translate(21rem, -35rem);
+   }
+}
+
+@keyframes rotate360 {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes move3 {
+   0% {
+      transform: translateX(0px);
+   }
+   50% {
+      transform: translateX(-38px);
+   }
+   100% {
+      transform: translateX(0px);
+   }
+}
+@keyframes move4 {
+   0% {
+      transform: translateX(0px) translateY(0px);
+   }
+   50% {
+      transform: translateX(40px) translateY(10px);
+   }
+   100% {
+      transform: translateX(0px) translateY(0px);
+   }
+}
+
+.shape.item-w-16 {
+   top: 24.8%;
+   right: 36.8%;
+}
+
+.shape.item-w-22 {
+   top: 60.5%;
+   left: 35.5%;
+}
+
+.shape.item-w-32 {
+   top: 56.7%;
+   right: 18.8%;
+}
+
+.shape.item-w-48 {
+   top: 53.5%;
+   left: 5%;
+}
+
+.shape.item-w-51 {
+   top: 14.5%;
+   right: 57.4%;
+}
+
+.shape.item-w-51.position2 {
+   top: 28%;
+   right: 53.8%;
+}
+
+.shape.item-w-68 {
+   top: 28%;
+   right: 23.5%;
+}
+.shape {
+   border-radius: 50%;
+   z-index: 1;
+   position: absolute;
+}
+
+.shape.item-w-22,
+.shape.item-w-48,
+.shape.item-w-68 {
+   animation-timing-function: auto;
+   animation: move4 10s infinite linear;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-fill-mode: none;
+   animation-play-state: running;
+   animation-name: move4;
+}
+
+.shape.item-w-51,
+.shape.item-w-32,
+.shape.item-w-16 {
+   animation: move3 10s infinite linear;
+}
+
+.style2 {
+   background: transparent !important;
+   border: 3px solid #e250e5;
+}
+
+.shape.item-w-16 {
+   width: 16px;
+   height: 16px;
+}
+
+.shape.item-w-22 {
+   width: 22px;
+   height: 22px;
+}
+
+.shape.item-w-32 {
+   width: 32px;
+   height: 32px;
+}
+
+.shape.item-w-48 {
+   width: 48px;
+   height: 48px;
+}
+
+.shape.item-w-51 {
+   width: 51px;
+   height: 51px;
+}
+
+.shape.item-w-68 {
+   width: 68px;
+   height: 68px;
+}
+
+.shape {
+   background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+}
+.position2 {
+   right: 27% !important;
+   top: 50% !important;
+}
+
+// heart animation
+.heart-icon {
+   cursor: pointer;
+   height: 20px;
+   width: 20px;
+   background-image: url("../axies-images/like-animation.png");
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: 2900%;
+   transform: scale(2.4);
+}
+
+.heart-icon:hover {
+   background-position: right;
+}
+
+.is_animating {
+   animation: heart-burst 0.8s steps(28) 1;
+}
+
+@keyframes heart-burst {
+   from {
+      background-position: left;
+   }
+   to {
+      background-position: right;
+   }
+}
+
+@keyframes rot10 {
+   0% {
+      transform: rotate(0deg);
+   }
+   25% {
+      transform: rotate(1deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+@keyframes showUpbtn {
+   0% {
+      transform: translateY(1rem);
+   }
+   100% {
+      transform: translateY(0rem);
+   }
+}
+
+.container {
+   transform: translateX(-2rem);
+   opacity: 0;
+   transition: 1s;
+}
+.fade-animation {
+   opacity: 1;
+   transform: translateX(0rem);
+}

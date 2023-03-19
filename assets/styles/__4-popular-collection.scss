@@ -1,0 +1,122 @@
+.popular {
+   margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   color: var(--content-color);
+   padding: 3rem;
+
+   &__main {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(39rem, 1fr));
+      justify-items: center;
+   }
+   &__card {
+      &:hover {
+         transform: translateY(-1rem);
+
+         filter: drop-shadow(0px 0px 1rem black);
+      }
+      transition: 1s;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #343444;
+
+      padding: 2rem;
+      border-radius: 1rem;
+      &-top {
+         display: flex;
+         gap: 1rem;
+      }
+      &-bottom {
+         display: flex;
+         gap: 1rem;
+      }
+   }
+
+   img {
+      border-radius: 1rem;
+      overflow: hidden;
+      &:hover {
+         transform: scale(1.1);
+
+         filter: drop-shadow(0px 0px 10px black);
+      }
+      transition: 0.5s;
+   }
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0rem 3rem;
+      &__left {
+         font-size: 3rem;
+      }
+      &__right {
+         font-size: 1.2rem;
+         cursor: pointer;
+         transition: 1s;
+         // border-right: 2px transparent;
+         @include border-gradient;
+      }
+   }
+   &__main {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+   }
+
+   &__top-img {
+      width: 19.8rem;
+      height: 12rem;
+      object-fit: cover;
+   }
+   &__bottom-img {
+      width: 13rem;
+      height: 12rem;
+      object-fit: cover;
+   }
+
+   &__desc {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+         width: 5rem;
+      }
+      &-container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &__text {
+         display: flex;
+         flex-direction: column;
+
+         &-r1 {
+            font-size: 1.6rem;
+            font-weight: 500;
+         }
+         &-r2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            &-light {
+               font-weight: 300;
+               color: #f6f6f6;
+            }
+         }
+      }
+   }
+
+   &__like-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0rem 1rem;
+      height: 2.5rem;
+      background-color: var(--main-color);
+      border-radius: 1rem;
+      font-size: 1.2rem;
+   }
+}

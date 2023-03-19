@@ -1,0 +1,49 @@
+:root {
+   --main-color: #14141f;
+   --main-color-2: #2c2c45;
+   --content-color: #ffffff;
+   --main-color-light: #5142fa;
+   --blue-dark: #2c2c45;
+}
+
+body.light-theme {
+   --main-color: #0095ff;
+   --content-color: #000000;
+   --main-color-light: rgb(0, 107, 207);
+   --main-color-2: rgb(130, 130, 139);
+
+   background-color: var(--main-color);
+   background: radial-gradient(
+      circle,
+      rgb(0, 161, 230) 5%,
+      rgb(174, 187, 187) 100%
+   );
+
+   .header {
+      background-color: rgba(240, 248, 255, 0.515);
+   }
+
+   .popular__desc__text {
+      color: #ffffff;
+   }
+   .today__main__card {
+      color: #ffffff;
+   }
+}
+
+@mixin dark-mode {
+   $main-color: #0095ff;
+   $content-color: #000000;
+   $main-color-light: #5142fa;
+   $main-color-2: #2c2c45;
+}
+// @media (prefers-color-scheme: dark) {
+//    body {
+//       @include dark-mode;
+//    }
+// }
+// @media (prefers-color-scheme: light) {
+//    body {
+//       @include light-mode;
+//    }
+// }

@@ -1,0 +1,29 @@
+@import "__color", "__reset", "__mixins", "__animation", "__like-btn";
+
+@import "__0-header", "__1-hero", "__2-feature", "__3-live-acutions",
+   "__4-popular-collection";
+
+@import "__5-top-seller", "__6-today-picks", "__7-footer", "__gotoTopBtn";
+
+body {
+   overflow-x: hidden;
+}
+.vertical__icons {
+   position: fixed;
+   z-index: 100;
+   left: 1rem;
+   top: 40%;
+
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   filter: drop-shadow(0px 0px 5px black);
+   background-color: #343444;
+   border-radius: 1rem;
+   width: 4rem;
+}
+.hidden {
+   display: none !important;
+}
+@import "__mediaquery";

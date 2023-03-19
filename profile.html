@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="shortcut icon"
+         href="./assets/axies-images/favicon.png"
+         type="image/x-icon"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./assets/styles/profile/main.css" />
+
+      <script defer src="./assets/JS/header.js"></script>
+      <script defer src="./assets/JS/editProfile.js"></script>
+
+      <title>Edit profile</title>
+   </head>
+   <body>
+      <header class="header" id="header">
+         <div class="header__links">
+            <img
+               class="header__img sticky__img"
+               src="./assets/axies-images/01_header/logo_dark.png"
+               alt="axies logo header"
+            />
+            <ul>
+               <li class="header__home-link">
+                  <a href="./index.html">Home </a>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Explore</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="./item1.html">Item 1</a>
+                     <a href="./login.html">Login</a>
+                     <a href="#today">Today's Picks</a>
+                     <a href="#">Events</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Activity</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="#">Forum</a>
+                     <a href="#">Social Medias</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Community</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="#">Auctions</a>
+                     <a href="#">Sellers</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Pages</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="./login.html">Login</a>
+                     <a href="#">Blog</a>
+                     <a href="#">FAQ</a>
+                     <a href="#">Create Item</a>
+                  </div>
+               </li>
+               <li class="header__menu-container">
+                  <div class="header__menu-wrapper">
+                     <a href="#">Contact</a>
+                     <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="header__menu">
+                     <a href="#">Collections</a>
+                     <a href="#">Sellers</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+
+         <div class="header__search_wallet">
+            <div class="header__search">
+               <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+               <form action="" class="search" id="header-search">
+                  <input
+                     class="search__input"
+                     type="search"
+                     placeholder="Search"
+                     id="searchInput"
+                  />
+
+                  <div class="search__icon-container">
+                     <label
+                        for="searchInput"
+                        class="search__label"
+                        aria-label="Search"
+                     >
+                        <svg viewBox="0 0 1000 1000" title="Search">
+                           <path
+                              fill="currentColor"
+                              d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z"
+                           />
+                        </svg>
+                     </label>
+
+                     <button class="search__submit" aria-label="Search">
+                        <svg viewBox="0 0 1000 1000" title="Search">
+                           <path
+                              fill="currentColor"
+                              d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z"
+                           />
+                        </svg>
+                     </button>
+                  </div>
+               </form>
+            </div>
+
+            <div class="header__wallet" style="display: none">
+               <i class="fa-solid fa-wallet"></i>
+               <p>Wallet connect</p>
+            </div>
+            <div
+               class="header__buttons__container header__buttons__container-profile"
+            >
+               <img
+                  src="./assets/axies-images/04_Top Seller/avt-1.jpg"
+                  alt="Profile"
+               />
+            </div>
+            <div
+               class="header__buttons__container header__buttons__container-notifi"
+            >
+               <i class="fa-solid fa-bell"></i>
+            </div>
+         </div>
+
+         <div class="header__buttons">
+            <div class="header__buttons__container">
+               <img
+                  class="header__buttons--light-mode"
+                  src="./assets/axies-images/01_header/sun.png"
+                  alt="sun icon"
+               />
+            </div>
+            <div class="header__buttons__container">
+               <img
+                  src="./assets/axies-images/01_header/moon-2.png"
+                  alt="moon icon"
+               />
+            </div>
+         </div>
+      </header>
+
+      <main>
+         <div class="go-to-top-btn">
+            <i class="fa-solid fa-angle-up"></i>
+         </div>
+
+         <section class="item-header-container">
+            <h1>Edit Profile</h1>
+            <p>
+               <span class="fade-text">
+                  <a href="./index.html" class="fade-text">Home</a> / Pages /
+                  Author /
+               </span>
+               Edit Profile
+            </p>
+         </section>
+
+         <div class="profile-container">
+            <div class="profile__img">
+               <img
+                  src="./assets/axies-images/03_Live Auctions/card-item-2.jpg"
+                  alt="avatar"
+               />
+               <div class="profile__img-btn__container">
+                  <button class="profile__img-btn profile__img-btn-upload">
+                     Upload New Photo
+                  </button>
+                  <button class="profile__img-btn profile__img-btn-delete">
+                     Delete
+                  </button>
+               </div>
+            </div>
+            <!--  -->
+            <div class="profile__content">
+               <p class="profile__content__header">Choice your Cover image</p>
+               <div class="profile__content__uplode">
+                  <div class="profile__content__uplode-child">
+                     <button class="profile__content__uplode-child-btn">
+                        Uplode file
+                     </button>
+                  </div>
+                  <div class="profile__content__uplode-child">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item-3.jpg"
+                        alt=""
+                     />
+                  </div>
+                  <div class="profile__content__uplode-child">
+                     <img
+                        src="./assets/axies-images/05_Today's Picks/card-item-7.jpg"
+                        alt=""
+                     />
+                  </div>
+               </div>
+
+               <div class="profile__content__inputs-container">
+                  <div class="profile__content__inputs-container__left">
+                     <p
+                        class="profile__content__inputs-container__left__header"
+                     >
+                        Account info
+                     </p>
+
+                     <form action="">
+                        <label for="displayName">Display Name</label>
+                        <input
+                           type="text"
+                           name="displayName"
+                           placeholder="Ehsan mousavi"
+                        />
+                     </form>
+
+                     <form>
+                        <label for="customUrl">Custom URL</label>
+                        <input
+                           type="text"
+                           name="customUrl"
+                           placeholder="axies.ehasnmousavi.com/"
+                        />
+                     </form>
+
+                     <form>
+                        <label for="editEmail">Email</label>
+                        <input
+                           type="text"
+                           name="editEmail"
+                           placeholder="Ehsanmousavi1@outlook.com"
+                        />
+                     </form>
+
+                     <label for="bio" class="bio-label">Bio</label>
+                     <textarea
+                        name="bio"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        class="profile__content__inputs-container__left__bio"
+                     ></textarea>
+                  </div>
+                  <div class="profile__content__inputs-container__right">
+                     <p
+                        class="profile__content__inputs-container__right__header"
+                     >
+                        Your Social media
+                     </p>
+
+                     <form>
+                        <label for="facebookInput">Facebook</label>
+                        <input
+                           type="text"
+                           name="facebookInput"
+                           placeholder="Facebook username"
+                        />
+                        <button class="connect-btn connect-btn-facebook">
+                           Connect to Facebook
+                        </button>
+                     </form>
+
+                     <form>
+                        <label for="twitterInput">Twitter</label>
+                        <input
+                           type="text"
+                           name="twitterInput"
+                           placeholder="Twitter username"
+                        />
+                        <button class="connect-btn connect-btn-twitter">
+                           Connect to Twitter
+                        </button>
+                     </form>
+
+                     <form>
+                        <label for="DiscordInput">Discord</label>
+                        <input
+                           type="text"
+                           name="DiscordInput"
+                           placeholder="Discord username"
+                        />
+                        <button class="connect-btn connect-btn-discord">
+                           Connect to Discord
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__logo-desc">
+            <img
+               class="footer__logo-desc-logo"
+               src="./assets/axies-images/01_header/logo_dark.png"
+               alt="axies logo"
+            />
+            <p class="footer__logo-desc__text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Suscipit, illum?
+            </p>
+         </div>
+         <div class="footer__links">
+            <div class="footer__link links-container">
+               <p class="footer__link__title">My Account</p>
+               <p class="footer__link__item">Autors</p>
+               <p class="footer__link__item">Collection</p>
+               <p class="footer__link__item">Author Profile</p>
+               <p class="footer__link__item">Create Item</p>
+            </div>
+            <div class="footer__link links-container">
+               <p class="footer__link__title">Resources</p>
+               <p class="footer__link__item">Help & Support</p>
+               <p class="footer__link__item">Live Auctions</p>
+               <p class="footer__link__item">Item Details</p>
+               <p class="footer__link__item">Activity</p>
+            </div>
+            <div class="footer__link links-container">
+               <p class="footer__link__title">Company</p>
+               <p class="footer__link__item">Explore</p>
+               <p class="footer__link__item">Contact us</p>
+               <p class="footer__link__item">Our Blog</p>
+               <p class="footer__link__item">FAQ</p>
+            </div>
+         </div>
+         <div class="footer__subscribe">
+            <p class="footer__subscribe-text">Subscribe us</p>
+            <form action="submit" class="footer__subscribe__form">
+               <input type="text" placeholder="info@youremail.com" />
+               <button><i class="fa-solid fa-caret-right"></i></button>
+            </form>
+            <div class="footer__subscribe__icons">
+               <i class="fa-brands fa-twitter footer__subscribe__icon"></i>
+               <i class="fa-brands fa-facebook footer__subscribe__icon"></i>
+               <i class="fa-brands fa-telegram footer__subscribe__icon"></i>
+               <i class="fa-brands fa-youtube footer__subscribe__icon"></i>
+               <i class="fa-brands fa-tiktok footer__subscribe__icon"></i>
+               <i class="fa-brands fa-discord footer__subscribe__icon"></i>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

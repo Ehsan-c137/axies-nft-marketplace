@@ -1,0 +1,58 @@
+.top-seller {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding: 6rem;
+   color: var(--content-color);
+   &__header {
+      font-size: 3rem;
+   }
+
+   &__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      gap: 3rem;
+   }
+   &__card {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      &-img-container {
+         position: relative;
+         width: 9rem;
+         height: 9rem;
+         filter: drop-shadow(0px 0px 4px #f9f9f9);
+      }
+      &-img {
+         &:hover {
+            border-radius: 50%;
+         }
+         position: absolute;
+         border-radius: 2.5rem;
+         width: 100%;
+         transition: 0.5s;
+         cursor: pointer;
+         &-check {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            font-size: 2rem;
+            color: #5142fb;
+         }
+      }
+      &-text {
+         display: flex;
+         flex-direction: column;
+         gap: 0.5rem;
+         &__creator {
+            font-size: 1.5rem;
+         }
+         &__price {
+            font-size: 1.3rem;
+            color: #5c5b69;
+            font-weight: 500;
+         }
+      }
+   }
+}

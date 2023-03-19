@@ -1,0 +1,49 @@
+.feature {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+   gap: 1rem;
+   padding: 0rem 3rem;
+   text-align: center;
+
+   color: var(--content-color);
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+   }
+   &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      width: 5rem;
+      height: 5rem;
+      color: white;
+      border-radius: 1rem;
+      &__wallet {
+         background-color: #5142fb;
+      }
+      &__collection {
+         background-color: #46a433;
+      }
+      &__nft {
+         background-color: #9835fb;
+      }
+      &__list {
+         background-color: #df4949;
+      }
+   }
+   &__header {
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--contnet-color);
+   }
+   &__desc {
+      width: 90%;
+      font-size: 1.2rem;
+      line-height: 1.3;
+      font-weight: 300;
+      color: var(--content-color);
+   }
+}

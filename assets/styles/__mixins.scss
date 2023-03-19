@@ -1,0 +1,25 @@
+@mixin button {
+   padding: 1.2rem 2rem;
+   border-radius: 2rem;
+   border: 2px solid var(--main-color-light);
+   color: var(--content-color);
+   background-color: transparent;
+   cursor: pointer;
+}
+
+@mixin border-gradient {
+   border-bottom: 2px solid white;
+   border-image: linear-gradient(
+         90deg,
+         rgba(78, 83, 241, 1) 0%,
+         rgba(169, 86, 244, 1) 35%,
+         rgba(241, 85, 244, 1) 100%
+      )
+      1;
+}
+
+@mixin flex-hv-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

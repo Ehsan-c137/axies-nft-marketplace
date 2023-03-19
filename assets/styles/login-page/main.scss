@@ -1,0 +1,175 @@
+@import "__reset";
+
+.main {
+   max-width: 1200rem;
+   height: 100vh;
+   display: flex;
+
+   &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      width: 60%;
+
+      font-size: 1.6rem;
+      background-color: #5e3b79;
+      color: white;
+      filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.337));
+   }
+   &__left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6rem;
+      width: 100%;
+
+      img {
+         filter: drop-shadow(0px 0px 1px white);
+      }
+   }
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+
+   gap: 2rem;
+}
+
+.input {
+   &:focus-within {
+      border: 1px solid navajowhite;
+   }
+   position: relative;
+   border: 1px solid gray;
+   border-radius: 0.5rem;
+   padding: 1rem 2rem;
+}
+.input-placeholder {
+   left: 2rem;
+   top: 1.5rem;
+   position: absolute;
+
+   padding: 0rem 0.5rem;
+   font-size: 1.4rem;
+   background-color: #5e3b79;
+   color: rgb(192, 192, 192);
+   transition: 0.5s;
+}
+
+.input-main {
+   background-color: transparent;
+   outline: none;
+   border: none;
+   font-size: 2rem;
+   color: white;
+}
+
+.input-placeholder-active {
+   transform: translateY(-2.6rem);
+}
+.correct-mail {
+   border: 2px solid greenyellow !important;
+}
+.sign-in-button {
+   padding: 1rem 2rem;
+
+   background-color: #362245;
+   color: white;
+
+   border: none;
+   border-radius: 0.5rem;
+   cursor: pointer;
+   transition: 0.5s;
+   &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.302);
+   }
+   &:active {
+      transform: translateY(0rem);
+      box-shadow: none;
+   }
+}
+
+.new-to-platform {
+   color: rgb(174, 174, 174);
+}
+.create-account {
+   color: white;
+   cursor: pointer;
+}
+.or-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   color: rgb(174, 174, 174);
+}
+.or__border {
+   width: 15rem;
+   border-bottom: 1px solid #999;
+}
+
+.social-media-icons {
+   display: flex;
+   gap: 2rem;
+}
+.social-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 0.5rem;
+   width: 3rem;
+   height: 3rem;
+   cursor: pointer;
+   &__facebook {
+      background-color: #3e5a95;
+   }
+   &__twitter {
+      background-color: #68b6e8;
+   }
+   &__mail {
+      background-color: #db4b3a;
+   }
+   &__github {
+      background-color: #474444;
+   }
+   i {
+      font-size: 2rem;
+   }
+}
+
+@media (max-width: 550px) {
+   .main {
+      display: flex;
+      overflow: none;
+   }
+   .main__right {
+      width: 100vw;
+      filter: none;
+   }
+   .main__left {
+      display: none;
+   }
+   .form {
+      align-items: center;
+   }
+   .input {
+      padding: 1rem 0rem;
+   }
+   .input-placeholder {
+      top: 1.5rem;
+   }
+   .new-to-platform {
+      font-size: 1.2rem;
+   }
+   .sign-in-button {
+      width: 10rem;
+      padding: 0.5rem 0rem;
+   }
+}
+
+.home-btn {
+   color: #afafaf;
+}
